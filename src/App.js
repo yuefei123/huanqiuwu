@@ -5,10 +5,8 @@ import Tuijian from './pages/Tuijian/index.js'
 import Fabu from './pages/Fabu/index.js'
 import Xiaoxi from './pages/Xiaoxi/index.js'
 import Geren from './pages/Geren/index.js'
-
-
-
-
+import Login from './pages/Login/index.js'
+import Toast from './components/Toast/index.js'
 
 class App extends React.Component {
   render() {
@@ -21,6 +19,7 @@ class App extends React.Component {
           <Route exact path="/fabu" component={Fabu}></Route>
           <Route exact path="/xiaoxi" component={Xiaoxi}></Route>
           <Route exact path="/geren" component={Geren}></Route>
+          <Route exact path="/login" component={Login}></Route>
 
 
           <div className="footer">
@@ -45,6 +44,7 @@ class App extends React.Component {
               <span>个人中心</span>
             </NavLink>
           </div>
+          <Toast/>
         </div>
       </BrowserRouter>
 

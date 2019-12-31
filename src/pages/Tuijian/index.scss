@@ -1,4 +1,100 @@
 .main{
     flex:1;
-    background: yellow;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper{
+            position: absolute;
+            top: 1rem;
+            height: 11.1rem;
+            .swiper-slide{
+                overflow: auto;
+                .info{
+                    padding: .2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: 1.775rem;
+                        height: 1.6rem;
+                    }
+                    .text{
+                        width: 5rem;
+                        h3{
+                            line-height: .48rem;
+                            font-size: .32rem;
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis; 
+                        }
+                        p{
+                            color: #919191;
+                            font-size: .3rem;
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis; 
+                            b{
+                                float: right;
+                                color: #e46413;
+                            } 
+                            i{
+                                display: inline-block;
+                                width: 3.5rem;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                font-style: normal; 
+                            }
+                        }
+                        .biaoqian{
+                            padding: .04rem 0;
+                            span{
+                                background: #e936cb;
+                                color: white;
+                                margin-right: .2rem;
+                                font-size: .24rem;
+                                padding: .04rem;
+                            }
+                            span:nth-child(2){
+                                background: #a7d5b4;
+                            }
+                        }
+                        div{
+                            color: #3eac32;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            position: absolute;
+            top: 0;
+            background: white;
+            height: 1rem;
+            display: flex;
+            justify-content: center;
+            border-bottom: .02rem solid gray;
+        }
+        .swiper-pagination-bullet {
+          height: 1rem;
+          line-height: 1rem;
+          width: 1.2rem;
+          padding: 0 .24rem;
+          text-align: center;
+          opacity: 1;
+          border-radius: 0;
+          font-size: .36rem;
+          font-weight: bold;
+          background: rgba(0,0,0,0);
+        }
+        .swiper-pagination-bullet-active {
+          color:#3eac32;
+          background: white;
+          span{
+              padding-bottom: .1rem;
+              border-bottom: .07rem solid #3eac32;
+          }
+        }
+      }
 }
